@@ -1,15 +1,11 @@
 package Tests;
 
-import com.beust.jcommander.Parameter;
-import com.beust.jcommander.Parameters;
+
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
-import io.github.bonigarcia.seljup.SeleniumJupiter;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.After;
-import org.junit.Before;
-import org.openqa.selenium.remote.*;
-
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 
 public class BaseTest {
 
@@ -37,10 +33,10 @@ public class BaseTest {
 
     }
 
-    @Before
+    @BeforeTest
     public void init() { setUp();  }
 
-    @After
+    @AfterTest
     public void tearDown (){
         Selenide.closeWebDriver();
     }
