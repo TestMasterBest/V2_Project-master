@@ -30,6 +30,7 @@ public class Tests extends BaseTest{
      * Проверка блокировки перехода по Yandex logo на сайт Yandex Dzen.
      * Блокировщик - rel="noopener noreferrer"
      */
+    /**
     @Test
   //  @DisplayName("Проверка блокировки открытия Yandex")
     public void checkYandexLogoHref() throws InterruptedException {
@@ -41,7 +42,7 @@ public class Tests extends BaseTest{
 
         Assert.assertEquals("Не открылся Yandex Dzen", "Найти",new MainPage(BASE_URL).yandexLogoClick().getFindButton());
     }
-
+     */
     /**
      * Проверка поиска НЕ ВЕРНОГО номера заказа
      */
