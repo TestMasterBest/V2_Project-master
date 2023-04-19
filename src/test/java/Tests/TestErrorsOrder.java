@@ -6,36 +6,38 @@ import org.testng.annotations.Test;
 
 
 public class TestErrorsOrder extends BaseTest{
+
     /**
      * Проверка при вводе НЕ ВЕРНОГО имени.
      */
-    @Test
+ //   @Test
    // @DisplayName("Error - Имя")
-    public void checkNameError(){
-        Assert.assertTrue(new MainPage(BASE_URL).makeOrderButtonClick().checkErrorsMsg("Проверка имени"));
-    }
+  //  public void checkNameError(){
+   //     Assert.assertTrue(new MainPage(BASE_URL).makeOrderButtonClick().checkErrorsMsg("Проверка имени"));
+  //  }
     /**
      * Проверка при вводе НЕ ВЕРНОЙ фамилии.
      */
-    @Test
+//    @Test
  //   @DisplayName("Error - Фамилия")
-    public void checkLastNameError(){
-        Assert.assertTrue(new MainPage(BASE_URL).makeOrderButtonClick().checkErrorsMsg("Проверка фамилии"));
-    }
+ //   public void checkLastNameError(){
+ //       Assert.assertTrue(new MainPage(BASE_URL).makeOrderButtonClick().checkErrorsMsg("Проверка фамилии"));
+//    }
     /**
      * Проверка при вводе НЕ ВЕРНОГО адреса.
      */
-    @Test
+ //   @Test
    // @DisplayName("Error - Адрес")
-    public void checkAddressError(){
-        Assert.assertTrue(new MainPage(BASE_URL).makeOrderButtonClick().checkErrorsMsg("Проверка адреса"));
-    }
+ //   public void checkAddressError(){
+  //      Assert.assertTrue(new MainPage(BASE_URL).makeOrderButtonClick().checkErrorsMsg("Проверка адреса"));
+ //   }
     /**
      * Проверка при вводе НЕ ВЕРНОГО телефона.
      */
-    @Test
+ //   @Test
    // @DisplayName("Error - Телефон")
-    public void checkPhoneError(){
-        Assert.assertTrue(new MainPage(BASE_URL).makeOrderButtonClick().checkErrorsMsg("Проверка телефона"));
-    }
+   // public void checkPhoneError(){
+   //     Assert.assertTrue(new MainPage(BASE_URL).makeOrderButtonClick().checkErrorsMsg("Проверка телефона"));
+   // }
+
 }

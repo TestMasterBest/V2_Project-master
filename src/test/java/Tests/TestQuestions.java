@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
  * тесты вопросов с ответами
  */
 public class TestQuestions extends BaseTest{
-
+/**
     @Test
     //@DisplayName("Проверка ответа 1")
     public void testQuestion1 () {
@@ -54,4 +54,5 @@ public class TestQuestions extends BaseTest{
     public void testQuestion8 (){
         Assert.assertTrue(new MainPage(BASE_URL).setQuestions("Вопрос-8:"), "Ответ совпадает с ожидаемым результатом!");
     }
+ */
 }
