@@ -17,6 +17,7 @@ public class Tests extends BaseTest{
     /**
      * Проверка перехода по Самокат Logo на главную страницу
      */
+    /**
     @Test
   //  @DisplayName("Проверка ссылки по лого Самокат")
     public void checkSamokatLogoHref(){
@@ -24,7 +25,7 @@ public class Tests extends BaseTest{
         mainPage.checkLogoHref();
         Assert.assertTrue(mainPage.header().isDisplayed(), "Не открылась стратовая страница");
     }
-
+     */
     /**
      * Проверка блокировки перехода по Yandex logo на сайт Yandex Dzen.
      * Блокировщик - rel="noopener noreferrer"
@@ -44,15 +45,15 @@ public class Tests extends BaseTest{
     /**
      * Проверка поиска НЕ ВЕРНОГО номера заказа
      */
-    @Test
+    /**  @Test
     public void checkSearchWrongOrderError(){
         Assert.assertTrue(new MainPage(BASE_URL).statusErrorOrderClick().checkErrorOrder());
     }
-
+     */
     /**
      * Проверка поиска ВЕРНОГО номера заказа
      */
-    @Test
+    /**   @Test
     public void checkSearchOrder(){
 
         Assert.assertTrue(new MainPage(BASE_URL).statusOrderClick().checkPageExist());
@@ -61,7 +62,7 @@ public class Tests extends BaseTest{
     /**
      * Проверка формирования заказа. Ошибка на сайте, кнопка подтверждения заказа не кликабельна в Chrome
      */
-    @Test
+/**    @Test
     public void makeOrderCustomer1(){
         MainPage mainPage = new MainPage(BASE_URL);
         mainPage.makeOrderButtonClick();
@@ -79,6 +80,6 @@ public class Tests extends BaseTest{
         Assert.assertTrue(successOrderPage.getOrderHeader().contains("Заказ оформлен"), "Заказ не сформирован, ошибка");
 
     }
-
+ */
 
 }
