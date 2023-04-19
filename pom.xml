@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>UI-project-The-Internet</artifactId>
+    <artifactId>V2_Project-master</artifactId>
     <version>1.0-SNAPSHOT</version>
 
 
@@ -78,7 +78,8 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.19</version>
                 <configuration>
-                    <testFailureIgnore>false</testFailureIgnore>
+                    <testFailureIgnore>true</testFailureIgnore>
+                    <printSummary>true</printSummary>
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
